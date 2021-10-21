@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Webpage</title>
+</head>
+<body>
+    <form onsubmit="foo()">
+        <label for="name">Username</label><br>
+        <input type="name" id="name" placeholder="Your Username here" name="Username" required><br>
+
+        <label for="Password">Password</label><br>
+        <input type="Password" id="Password" placeholder="Your Password here" name="Password" required><br>
+
+        <label for="Male">Male</label>
+        <input type="radio" id="Male" name="Gender" value="Male" required>
+        <label for="Female">Female</label>
+        <input type="radio" id="Female" name="Gender" value="Female" required><br>
+
+        <label for="Languages">Select the Languages known</label><br>
+        <input type="checkbox" id="english">
+        <label for="english">English</label><br>
+        <input type="checkbox" id="tamil">
+        <label for="tamil">Tamil</label><br>
+        <input type="checkbox" id="malayalam">
+        <label for="malayalam">Malayalam</label><br>
+        <input type="checkbox" id="Kannada">
+        <label for="kannada">Kannada</label><br>
+        <input type="checkbox" id="Telugu">
+        <label for="Telugu">Telugu</label><br>
+        <input type="checkbox" id="hindi">
+        <label for="hindi">Hindi</label><br>
+
+        <label for="citty">Choose the accesible city from list</label>
+        <select name="city" id="city">
+            <option value="select" onchange="select">Select</option>
+            <option value="coimbatore">Coimbatore</option>
+            <option value="chennai" >Chennai</option>
+            <option value="bangalore">Bangalore</option>
+            <option value="hyderabad">Hyderabad</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="delhi">New Delhi</option>
+        </select>
+
+        <br><input type="submit" value="Submit">
+        <input type="reset" value="Reset"><br><br>
+    </form>
+    <script>
+        function foo() {
+            alert ("Thank You");
+        }
+    </script>
+</body>
+</html>
